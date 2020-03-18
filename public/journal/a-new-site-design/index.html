@@ -35,7 +35,7 @@ I decided to do a third redesign of my personal website." />
 I decided to do a third redesign of my personal website.">
 <meta itemprop="datePublished" content="2020-03-18T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2020-03-18T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="282">
+<meta itemprop="wordCount" content="311">
 
 
 
@@ -88,26 +88,29 @@ I decided to do a third redesign of my personal website."/>
     <p>While the rest of the world is worrying about the COVID-19 global pandemic,
 I decided to do a third redesign of my personal website.</p>
 <h2 id="migration-to-google-cloud-storage">Migration to Google Cloud Storage</h2>
-<p>The motivation to change my site came from my desire to stop paying hosting
-fees.  As part of researching how I would transition to a cloud host, I was
-forced to look at my current site.  It was embarrasing that I hadn&rsquo;t made a
-site update in 8 years.  Things were looking pretty old.</p>
-<p>I ended up moving my hosting to
+<p>I decided a few years ago I wanted to stop paying hosting fees.  Several places
+had emerged where I could host for free or almost free.  I played around with
+<a href="https://aws.amazon.com/">AWS</a> and <a href="https://cloud.google.com/">GCP</a>.  Each
+had free tiers where I could learn.  I ended up moving my hosting to
 <a href="https://cloud.google.com/storage">Google Cloud Storage</a> since there is a
-permanent free tier that I felt I could fit into.</p>
+permanent free tier and it tied in with my overall Google account.</p>
+<p>While I was researching cloud hosts, I realized my current site was embarrasing.
+I hadn&rsquo;t updated the thing in 8 years.  It was looking pretty shabby.</p>
 <h2 id="static-site-generation-with-hugo">Static Site Generation with Hugo</h2>
-<p>I&rsquo;ve been interested in what are now called static site generators from almost
-the very beginning of their existence.  My main motivation was that it felt
-like having a full database for my dinky blog was overkill.  At the time, I
-ended up going with a perl-based system called <a href="http://blosxom.sourceforge.net/">Blosxom</a>.</p>
-<p>Since I last redesigned my site using Blosxom (in 2012 or so), the environment
-of static site generators has blown up.  When I was looking to get off my
-hosting provider, I looked at several static site generators and landed on
-<a href="https://gohugo.io/">Hugo</a> for the following reasons:</p>
+<p>I&rsquo;ve been interested in static site generators since before I did my last
+redesign.  It always felt like having a full database (such as
+<a href="https://wordpress.com/">Wordpress</a>) for my dinky blog was overkill.  When I did
+my last redesign (in 2012 or so), I ended up going with a perl-based system
+called <a href="http://blosxom.sourceforge.net/">Blosxom</a>.  I think Blosxom was one of
+the first, if not THE first, static site generators.</p>
+<p>Since then, the number of static site generators has blown up.  Now
+they have a cool new name (<a href="https://jamstack.org/">JAMstack</a>).  When I was
+looking to get off my hosting provider, I looked at several static site
+generators and landed on <a href="https://gohugo.io/">Hugo</a> for the following reasons:</p>
 <ul>
 <li>Extensive library of decent looking templates</li>
-<li>Distributed as a single executable (Jekyll, for instance, requires a Ruby
-environment to be set up)</li>
+<li>Distributed as a single executable (<a href="https://jekyllrb.com/">Jekyll</a>,
+for instance, requires a Ruby environment to be set up)</li>
 <li>Written in <a href="https://golang.org/">Go</a>, which I don&rsquo;t know but I&rsquo;m interested
 in.  I only know <a href="https://www.python.org/">Python</a>, and the only static
 site generator that I found using Python is
