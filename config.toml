@@ -1,4 +1,4 @@
-baseurl = "http://www.nathanbibb.com/"
+baseurl = "http://www.nathanbibb.com"
 title = "Nathan Bibb"
 theme = "pulp"
 canonifyurls = true

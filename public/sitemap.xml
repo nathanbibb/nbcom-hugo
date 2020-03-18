@@ -3,15 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://www.nathanbibb.com/categories/</loc>
+    <loc>http://www.nathanbibb.com/journal/a-new-site-design/</loc>
+    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.nathanbibb.com/journal/</loc>
+    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.nathanbibb.com/</loc>
+    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.nathanbibb.com/tags/</loc>
+    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.nathanbibb.com/tags/technology/</loc>
+    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.nathanbibb.com/categories/</loc>
   </url>
   
 </urlset>
