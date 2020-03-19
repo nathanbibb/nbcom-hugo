@@ -5,7 +5,7 @@ canonifyurls = true
 hasCJKLanguage = true
 pluralizelisttitles = false
 # pygmentsCodefences = true
-# pygmentsUseClasses = true
+pygmentsUseClasses = true
 # googleAnalytics = "{your tracking code}"
 
 [params]
