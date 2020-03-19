@@ -6,7 +6,7 @@ draft: false
 To correct the front page a little, I work for a giant consulting congolomerate
 that has a smaller division that sells software to insurance companies.  You
 can see more details about my work life on my
-[LinkedIn page](https://www.linkedin.com/in/nathanbibb/)
+[LinkedIn page](https://www.linkedin.com/in/nathanbibb/).
 <!--more-->
 
 ## About nathanbibb.com
@@ -20,8 +20,18 @@ in 2004.  Now it seems there is a third party platform for everything you might
 want to do online - post pictures on Instagram, personal thoughts on Twitter
 and Facebook, articles on Medium, music on Bandcamp, etc. etc.
 
-So I'm leaving what I do here open ended.
+So I'm leaving this site's purpose open ended.
 
-## About Me
+## Colophon
 
-Why are you so nosy?
+The colors on this site are adopted from the
+[Solarized](https://ethanschoonover.com/solarized/) color palette.
+
+The main image on this site is a picture of Nathan Bibb with cat Ivy.
+
+This site is built using [Hugo](https://gohugo.io/) with a modified version of
+the [Pulp](https://github.com/koirand/pulp/) theme.
+
+Local development is done on an
+[Intel NUC](https://www.intel.com/content/www/us/en/products/boards-kits/nuc.html)
+running [Fedora](https://getfedora.org/).
