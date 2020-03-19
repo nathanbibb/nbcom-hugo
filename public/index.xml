@@ -5,10 +5,22 @@
     <link>http://www.nathanbibb.com/</link>
     <description>Recent content on Nathan Bibb</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 18 Mar 2020 20:27:23 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 18 Mar 2020 21:46:33 -0400</lastBuildDate>
     
 	<atom:link href="http://www.nathanbibb.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About</title>
+      <link>http://www.nathanbibb.com/about/</link>
+      <pubDate>Wed, 18 Mar 2020 21:46:33 -0400</pubDate>
+      
+      <guid>http://www.nathanbibb.com/about/</guid>
+      <description>&lt;p&gt;To correct the front page a little, I work for a giant consulting congolomerate
+that has a smaller division that sells software to insurance companies.  You
+can see more details about my work life on my
+&lt;a href=&#34;https://www.linkedin.com/in/nathanbibb/&#34;&gt;LinkedIn page&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>A New Site Design</title>
