@@ -3,7 +3,7 @@ title: "A New Site Design"
 date: 2020-03-18
 draft: false
 tags: [
-    "technology"
+    "Technology"
 ]
 ---
 While the rest of the world is worrying about the COVID-19 global pandemic,
