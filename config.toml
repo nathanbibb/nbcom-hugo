@@ -13,7 +13,7 @@ pluralizelisttitles = false
     avatar = "avatar.jpg"
     favicon = "favicon.ico"
     description = """
-        Hello, there!  I'm Nathan.  I work for a company that sells software to insurance companies (and much more). I also enjoy music, games, technology, history, and pensively worrying about things.
+        Hi, there!  I'm Nathan.  I work for a company that sells software to insurance companies (and much more). I also enjoy music, games, technology, history, and pensively worrying about things.
     """
     publicationYear = "2020"
     # listPageDateFormat = "January, 2006" # See https://gohugo.io/functions/format/
