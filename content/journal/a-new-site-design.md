@@ -19,7 +19,7 @@ had free tiers where I could learn.  I ended up moving my hosting to
 [Google Cloud Storage](https://cloud.google.com/storage) since there is a
 permanent free tier and it tied in with my overall Google account.
 
-While I was researching cloud hosts, I realized my current site was embarrasing.
+While I was researching cloud hosts, I realized my current site was embarrassing.
 I hadn't updated the thing in 8 years.  It was looking pretty shabby.
 
 ## Static Site Generation with Hugo
@@ -27,7 +27,7 @@ I hadn't updated the thing in 8 years.  It was looking pretty shabby.
 I've been interested in static site generators since before I did my last
 redesign.  It always felt like having a full database (such as 
 [Wordpress](https://wordpress.com/)) for my dinky blog was overkill.  When I did
-my last redesign (in 2012 or so), I ended up going with a perl-based system
+my last redesign (in 2012 or so), I ended up going with a Perl-based system
 called [Blosxom](http://blosxom.sourceforge.net/).  I think Blosxom was one of
 the first, if not THE first, static site generators.
 

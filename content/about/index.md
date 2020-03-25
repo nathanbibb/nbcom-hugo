@@ -3,7 +3,7 @@ title: "About"
 date: 2020-03-18T21:46:33-04:00
 draft: false
 ---
-To correct the front page a little, I work for a giant consulting congolomerate
+To correct the front page a little, I work for a giant consulting conglomerate
 that has a smaller division that sells software to insurance companies.  You
 can see more details about my work life on my
 [LinkedIn page](https://www.linkedin.com/in/nathanbibb/).
