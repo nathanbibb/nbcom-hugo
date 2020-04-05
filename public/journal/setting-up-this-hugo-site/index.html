@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>
+      
+          Setting Up This Hugo Site - Nathan Bibb
+      
+  </title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Nathan Bibb" />
+  <link rel="shortcut icon" type="image/x-icon" href="http://www.nathanbibb.com/img/favicon.ico">
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="http://www.nathanbibb.com/style.min.431a36084febf44cadaa075d48730162f1c3386f5855601e0f8378d4ce47bbc8.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  
+  
+  <link rel="stylesheet" href="http://www.nathanbibb.com/css/custom.css">
+  
+
+  <meta property="og:title" content="Setting Up This Hugo Site" />
+<meta property="og:description" content="When setting up this Hugo site, I found that most of the documentation was
+either very high-level (&ldquo;Quick Start&rdquo;) or very in-depth (Full Specs).  There
+wasn&rsquo;t much of a middle ground, giving a step-by-step process of both setting
+up a minimal site, and doing some basic configuration," />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.nathanbibb.com/journal/setting-up-this-hugo-site/" />
+<meta property="article:published_time" content="2020-04-04T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-04-04T00:00:00+00:00" />
+<meta itemprop="name" content="Setting Up This Hugo Site">
+<meta itemprop="description" content="When setting up this Hugo site, I found that most of the documentation was
+either very high-level (&ldquo;Quick Start&rdquo;) or very in-depth (Full Specs).  There
+wasn&rsquo;t much of a middle ground, giving a step-by-step process of both setting
+up a minimal site, and doing some basic configuration,">
+<meta itemprop="datePublished" content="2020-04-04T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-04-04T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1489">
+
+
+
+<meta itemprop="keywords" content="Technology," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:image" content="http://www.nathanbibb.com/img/avatar.jpg"/>
+<meta name="twitter:title" content="Setting Up This Hugo Site"/>
+<meta name="twitter:description" content="When setting up this Hugo site, I found that most of the documentation was
+either very high-level (&ldquo;Quick Start&rdquo;) or very in-depth (Full Specs).  There
+wasn&rsquo;t much of a middle ground, giving a step-by-step process of both setting
+up a minimal site, and doing some basic configuration,"/>
+
+  <!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+  <![endif]-->
+
+  <!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+  <![endif]-->
+
+  </head>
+
+  <body>
+    
+  <h1>Setting Up This Hugo Site</h1>
+  <header>
+  
+  <div class="avatar">
+    <img class="avatarMask" src="http://www.nathanbibb.com/img/avatar.jpg">
+    <a href="http://www.nathanbibb.com"><img src="http://www.nathanbibb.com/img/avatar-border.svg"></a>
+  </div>
+  
+  <h2><a class="author" href="http://www.nathanbibb.com">Nathan Bibb</a></h2>
+</header>
+
+  
+  
+  <p class="date">April 4, 2020</p>
+  
+  <div id="tags">
+    <ul>
+      
+        
+        
+          <li><a href="http://www.nathanbibb.com/tags/technology/">Technology</a></li>
+        
+      
+    </ul>
+  </div>
+  
+  <div id="contentBody">
+    <p>When setting up this Hugo site, I found that most of the documentation was
+either very high-level (&ldquo;Quick Start&rdquo;) or very in-depth (Full Specs).  There
+wasn&rsquo;t much of a middle ground, giving a step-by-step process of both setting
+up a minimal site, and doing some basic configuration,</p>
+<p>While it was easy enough to figure out, I thought it might be helpful to
+someone if I detailed the steps I took to do the following:</p>
+<ol>
+<li>Setting up the Initial Site</li>
+<li>Tweak the Theme (things like colors)</li>
+<li>Adjust the Theme Layout (things like the footer and lists)</li>
+</ol>
+<p>Below, I&rsquo;m providing links to the
+<a href="https://gohugo.io/getting-started/quick-start/">Hugo Quick Start</a> that I used
+as I set up, and noting where I made changes to the steps in that guide.  Also,
+I am using the <a href="https://themes.gohugo.io/pulp/">Pulp theme</a> rather than the
+theme suggested in the Quick Start.</p>
+<h2 id="setting-up-the-initial-site">Setting up the Initial Site</h2>
+<h3 id="install-and-creating-a-new-site">Install and Creating a New Site</h3>
+<ol>
+<li><a href="https://gohugo.io/getting-started/quick-start/#step-1-install-hugo">Step 1: Install Hugo</a></li>
+</ol>
+<p>I use <a href="https://getfedora.org/">Fedora</a> as my Desktop OS, and I do not use
+Homebrew, so I followed the instructions to
+<a href="https://gohugo.io/getting-started/installing#install-hugo-from-tarball">Install Hugo from Tarball</a>.  Worked well for me.  That guide suggested installing at
+<code>~/bin</code>, but I prefer to keep my local executables at <code>~/.local/bin</code> to avoid
+home directory clutter.</p>
+<ol start="2">
+<li><a href="https://gohugo.io/getting-started/quick-start/#step-2-create-a-new-site">Step 2: Create a New Site</a></li>
+</ol>
+<p>Use as directed - <code>hugo new site quickstart</code>.</p>
+<h3 id="adding-a-theme">Adding a Theme</h3>
+<ol start="3">
+<li><a href="https://gohugo.io/getting-started/quick-start/#step-3-add-a-theme">Step 3: Add a Theme</a></li>
+</ol>
+<p>I followed each part of this step except for the last piece. I used the
+<a href="https://themes.gohugo.io/pulp/">Pulp theme</a>, and as directed by the guide, I
+downloaded the theme from Github and added it to my site&rsquo;s <code>theme</code> directory:</p>
+<pre><code>cd quickstart
+git init
+git submodule add https://github.com/koirand/pulp.git themes/pulp
+</code></pre><p>See the note on the Quick Start for non-git users. I recently moved from
+<a href="https://subversion.apache.org/">Subversion</a> to <a href="https://git-scm.com/">Git</a>,
+so I was good to go here.</p>
+<p>After this, I diverged a bit from the Quick Start Guide.  Instead of adding the
+theme to the site configuration as suggested in the Quick Start:</p>
+<pre><code>echo 'theme = &quot;pulp&quot;' &gt;&gt; config.toml
+</code></pre><p>&hellip;I copied the config file from the theme&rsquo;s <code>exampleSite</code> directory:</p>
+<pre><code>cp themes/pulp/exampleSite/config.toml .
+</code></pre><p>I found there were settings in the Theme&rsquo;s config file that I needed, and there
+was no need to copy them to Hugo&rsquo;s default config file.  The default theme for
+the Quick Start, <a href="https://themes.gohugo.io/gohugo-theme-ananke/">Ananke</a>,
+is structured the same way, so you should probably do this regardless of the
+theme you use.</p>
+<h3 id="adding-content-and-starting-the-server">Adding Content and Starting the Server</h3>
+<ol start="4">
+<li><a href="https://gohugo.io/getting-started/quick-start/#step-4-add-some-content">Step 4: Add Some Content</a></li>
+</ol>
+<p>When adding content, you preface the content file with a category. This is
+really just the directory the content will be in. The category
+expected by the default theme was <code>posts</code>, but Pulp expects a category of
+<code>blog</code>, so my first new content command looked like this:</p>
+<pre><code>hugo new blog/my-first-post.md
+</code></pre><p>Now, in a text editor, put something in the new file created at
+<code>quickstart/content/blog/my-first-post.md</code>.  Put your content at the bottom
+of the file, so it looks something like this:</p>
+<pre><code>---
+title: &quot;My First Post&quot;
+date: 2020-04-04T18:32:47-04:00
+draft: true
+---
+This is my own freshly created content!
+</code></pre><ol start="5">
+<li><a href="https://gohugo.io/getting-started/quick-start/#step-5-start-the-hugo-server">Step 5: Start the Hugo server</a></li>
+</ol>
+<p>Now, you can start your Hugo server and see your cool new site:</p>
+<pre><code>hugo server -D
+</code></pre><p>The -D is for &ldquo;Drafts&rdquo;.</p>
+<p>If you point your browser to <a href="http://localhost:1313/">http://localhost:1313/</a>,
+you should see something similar to this:
+<img src="http://www.nathanbibb.com/img/quickstart_step5.png" alt="Quick Start Step 5 with Pulp Theme"></p>
+<p>Click on the icon to the left that looks like a book, and you should see:
+<img src="http://www.nathanbibb.com/img/quickstart_step5_blog.png" alt="Quick Start Step 5 with Pulp Theme - Blogs"></p>
+<p>Then click on your new post link, and you should see it:
+<img src="http://www.nathanbibb.com/img/quickstart_step5_firstpost.png" alt="Quick Start Step 5 with Pulp Theme - First Post"></p>
+<h2 id="tweak-the-theme">Tweak the Theme</h2>
+<ol start="6">
+<li><a href="https://gohugo.io/getting-started/quick-start/#step-6-customize-the-theme">Step 6: Customize the Theme</a></li>
+</ol>
+<p>With Step 6, I made major deviations from the Quick Start.  The Quick Start
+really is just enough to barely get you going here.  There is a lot more to do
+to get to having your own site configured.</p>
+<h3 id="basic-customization">Basic Customization</h3>
+<p>You will first need to change the following lines in your <code>config.toml</code> file
+to reflect your specific site:</p>
+<pre><code>baseurl = &quot;https://example.com/&quot;
+title = &quot;Site Title&quot;
+</code></pre><p>Also, in the <code>params</code> section, you should change these values:</p>
+<div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+<span class="hl">    <span class="nx">author</span> <span class="p">=</span> <span class="s2">&#34;Your Name&#34;</span>
+</span>    <span class="nx">avatar</span> <span class="p">=</span> <span class="s2">&#34;avatar.jpg&#34;</span>
+    <span class="nx">favicon</span> <span class="p">=</span> <span class="s2">&#34;favicon.ico&#34;</span>
+<span class="hl">    <span class="nx">description</span> <span class="p">=</span> <span class="s2">&#34;&#34;&#34;
+</span></span><span class="hl"><span class="s2">        Please write anything here.
+</span></span><span class="hl"><span class="s2">        Profiles, backgrounds, favorite things etc.
+</span></span><span class="hl"><span class="s2">    &#34;&#34;&#34;</span>
+</span><span class="hl">    <span class="nx">publicationYear</span> <span class="p">=</span> <span class="s2">&#34;2019&#34;</span></span></code></pre></div>
+<h3 id="custom-images">Custom Images</h3>
+<p>Don&rsquo;t change <code>avatar</code> or <code>favicon</code> - the Pulp theme page has instructions for
+where to put your images for both of these, namely:</p>
+<ul>
+<li>Put a 200x200 pixel image (size is important here) named <code>avatar.jpg</code>
+in the directory <code>static\img</code>.</li>
+<li>In the same directory, put your favicon.ico file</li>
+</ul>
+<p>Your site should now look something like this (with your custom test):
+<img src="http://www.nathanbibb.com/img/quickstart_step6.png" alt="Quick Start Step 6 with Pulp Theme"></p>
+<h3 id="create-the-menu">Create the Menu</h3>
+<p>The Pulp theme provides icons from <a href="https://fontawesome.com/">Font Awesome</a>, so
+you can change each of these menu items to point to the URL to your Twitter,
+Github, and/or Email links, and add others as well.  Just update or copy/paste
+this block in <code>config.toml</code>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[[</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+    <span class="nx">identifier</span> <span class="p">=</span> <span class="s2">&#34;github&#34;</span>
+    <span class="c"># name = &#34;GitHub&#34;</span>
+    <span class="nx">pre</span> <span class="p">=</span> <span class="s2">&#34;&lt;i class=&#39;fab fa-github fa-lg&#39;&gt;&lt;/i&gt;&#34;</span>
+    <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;https://github.com/username&#34;</span>
+    <span class="nx">weight</span> <span class="p">=</span> <span class="mi">30</span></code></pre></div>
+<p>If you uncomment the <code>name</code> attribute, it will display a written name in
+addition to the icon.</p>
+<h3 id="custom-site-colors">Custom Site Colors</h3>
+<p>Basically, anything in your theme directory can be put in your main site
+directory structure, and it will override your theme.  The theme styles are
+located in <code>themes/pulp/assets/css</code>.  So you COULD copy all the stylesheets
+from this directory to <code>assets/css</code> (creating directories as needed), and your
+site will use those files.</p>
+<p>However, a better way to do this will be to override JUST the parts you want.
+That way, if the style is updated later, you&rsquo;ll get the benefit of those updates
+while keeping the changes you made.  To do this, you will need to do the
+following:</p>
+<ol>
+<li>Create a file called <code>static\css\custom.css</code>.  Put your custom styles here</li>
+<li>Uncomment the line <code># custom_css = [&quot;/css/custom.css&quot;]</code> in your
+<code>config.toml</code></li>
+</ol>
+<p>If you know how to adjust colors in CSS, you can set up your <code>custom.css</code> to
+provide the colors you want.  I don&rsquo;t think there is an easier way to do this.</p>
+<p>For instance, the <code>custom.css</code> I used for this site (based on the Solarized
+color palette) looks like this:</p>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="c">/* style.css overrides */</span>
+
+<span class="nt">body</span> <span class="p">{</span>
+  <span class="k">background-color</span><span class="p">:</span> <span class="mh">#073642</span><span class="p">;</span>
+  <span class="k">color</span><span class="p">:</span> <span class="mh">#93a1a1</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">a</span><span class="p">:</span><span class="nd">link</span> <span class="p">{</span>
+  <span class="k">color</span><span class="p">:</span> <span class="mh">#93a1a1</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">a</span><span class="p">:</span><span class="nd">visited</span> <span class="p">{</span>
+  <span class="k">color</span><span class="p">:</span> <span class="mh">#93a1a1</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">a</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
+  <span class="k">color</span><span class="p">:</span> <span class="mh">#eee8d5</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">a</span><span class="p">:</span><span class="nd">active</span> <span class="p">{</span>
+  <span class="k">color</span><span class="p">:</span> <span class="mh">#eee8d5</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">#</span><span class="nn">searchBox</span> <span class="p">#</span><span class="nn">searchBoxInput</span> <span class="p">{</span>
+  <span class="k">color</span><span class="p">:</span> <span class="mh">#93a1a1</span><span class="p">;</span>
+  <span class="k">background-color</span><span class="p">:</span><span class="mh">#002b36</span><span class="p">;</span>
+  <span class="k">border</span><span class="p">:</span> <span class="kc">solid</span> <span class="mi">1</span><span class="kt">px</span> <span class="mh">#93a1a1</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">#</span><span class="nn">searchBox</span> <span class="p">#</span><span class="nn">searchBoxInput</span><span class="p">::</span><span class="nd">placeholder</span> <span class="p">{</span>
+  <span class="k">color</span><span class="p">:</span> <span class="mh">#eee8d5</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">#</span><span class="nn">searchResults</span> <span class="p">{</span>
+  <span class="k">background-color</span><span class="p">:</span><span class="mh">#002b36</span><span class="p">;</span>
+  <span class="k">border</span><span class="p">:</span> <span class="kc">solid</span> <span class="mi">1</span><span class="kt">px</span> <span class="mh">#eee8d5</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">#</span><span class="nn">searchResults</span> <span class="nt">mark</span> <span class="p">{</span>
+  <span class="k">background-color</span><span class="p">:</span> <span class="mh">#268bd2</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">#</span><span class="nn">tags</span> <span class="nt">li</span> <span class="nt">a</span> <span class="p">{</span>
+  <span class="k">background-color</span><span class="p">:</span> <span class="mh">#073642</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">#</span><span class="nn">contentsList</span> <span class="nt">hr</span><span class="p">.</span><span class="nc">separator</span> <span class="p">{</span>
+  <span class="k">border</span><span class="p">:</span> <span class="kc">solid</span> <span class="mi">1</span><span class="kt">px</span> <span class="mh">#fdf6e3</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* markdown.css overrides */</span>
+
+<span class="p">#</span><span class="nn">contentBody</span> <span class="nt">hr</span> <span class="p">{</span>
+  <span class="k">border-bottom</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#fdf6e3</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">#</span><span class="nn">contentBody</span> <span class="nt">blockquote</span> <span class="p">{</span>
+  <span class="k">color</span><span class="p">:</span> <span class="mh">#586e75</span><span class="p">;</span>
+  <span class="k">border-left</span><span class="p">:</span> <span class="mf">0.25</span><span class="kt">em</span> <span class="kc">solid</span> <span class="mh">#fdf6e3</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">#</span><span class="nn">contentBody</span> <span class="nt">table</span> <span class="nt">th</span><span class="o">,</span>
+<span class="p">#</span><span class="nn">contentBody</span> <span class="nt">table</span> <span class="nt">td</span> <span class="p">{</span>
+  <span class="k">border</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#fdf6e3</span><span class="p">;</span>
+  <span class="k">background-color</span><span class="p">:</span> <span class="mh">#586e75</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">#</span><span class="nn">contentBody</span> <span class="nt">img</span> <span class="p">{</span>
+  <span class="k">background-color</span><span class="p">:</span> <span class="mh">#586e75</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">#</span><span class="nn">contentBody</span> <span class="nt">code</span> <span class="p">{</span>
+  <span class="k">background-color</span><span class="p">:</span> <span class="mh">#002b36</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">#</span><span class="nn">contentBody</span> <span class="p">.</span><span class="nc">highlight</span> <span class="nt">pre</span><span class="o">,</span>
+<span class="p">#</span><span class="nn">contentBody</span> <span class="nt">pre</span> <span class="p">{</span>
+  <span class="k">background-color</span><span class="p">:</span> <span class="mh">#002b36</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
+<h2 id="adjust-the-theme-layout">Adjust the Theme Layout</h2>
+<p>There were a couple of other things I wanted to change on my site that were
+more than just colors:</p>
+<ol>
+<li>I wanted to change how the Footer was displayed.</li>
+<li>I wanted to change the &ldquo;blogs&rdquo; screen to have some text.</li>
+</ol>
+<h3 id="change-to-footer---hugo-partials">Change to Footer - Hugo Partials</h3>
+<p>I discovered that the footer of the Pulp theme was defined using what are
+called <a href="https://gohugo.io/templates/partials/">Partials</a>.  These are defined
+for this theme in <code>themes/pulp/layouts/partials</code>.</p>
+<p>To change this, I copied the file I wanted to change, <code>footer.html</code>, to the same
+directory outside the theme directory - <code>layouts/partials/footer.html</code>.  Then I
+added this line to the file:</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="ni">&amp;copy;</span> {{ .Site.Params.publicationYear }} {{ .Site.Params.Author }}.
+  Powered by <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://gohugo.io/&#34;</span><span class="p">&gt;</span>Hugo<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+  using the <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://github.com/koirand/pulp/&#34;</span><span class="p">&gt;</span>pulp<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span> theme.
+  <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="hl">  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Another line that I added...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
+{{- range .Site.Params.custom_js -}}
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;{{ . }}&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+{{ end }}</code></pre></div>
+<h3 id="change-the-list-default">Change the &ldquo;List&rdquo; Default</h3>
+<p>This one took me a while to figure out.  I finally found what I needed buried
+in the <a href="https://gohugo.io/templates/lists/">List Template</a> page in the Hugo
+Documentation.  Here&rsquo;s what I did - you can read up in the docs to get the
+details on why this worked:</p>
+<ol>
+<li>I created a new <code>content/blog/_index.md</code> file.</li>
+</ol>
+<pre><code>hugo new blog/_index.md
+</code></pre><ol start="2">
+<li>In this file, I added the text I wanted to display on the main page of the
+blog.</li>
+</ol>
+<pre><code>---
+title: &quot;Blog&quot;
+date: 2020-04-04T23:29:35-04:00
+draft: true
+---
+Here is the content I want on my blog main page...
+</code></pre><ol start="3">
+<li>To get this to display, I had to change the <code>list.html</code> default layout.  I
+copied <code>themes/pulp/layouts/_default/list.html</code> to
+<code>layouts/_default/list.html</code>, and updated the copied file to add the
+<code>{{.Content}}</code> <a href="https://gohugo.io/content-management/shortcodes/">Shortcode</a></li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">{{ define &#34;main&#34;}}
+  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>{{ .Title }}<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+  {{ partial &#34;header.html&#34; . }}
+  <span class="c">&lt;!-- search box --&gt;</span>
+<span class="hl">  {{.Content}}
+</span>  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;searchBox&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;searchBoxInput&#34;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;Search...&#34;</span> <span class="p">/&gt;</span>
+    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;searchBoxIcon&#34;</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;{{ .Site.BaseURL }}/img/search.png&#34;</span> <span class="p">/&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+<p>Now with all these changes, your blog page should look something like this:
+<img src="http://www.nathanbibb.com/img/quickstart_step6_final.png" alt="Quick Start Step 6 with Pulp Theme - Final"></p>
+<h2 id="addendum-building-the-static-pages-and-deploy">Addendum: Building the Static Pages and Deploy</h2>
+<ol start="7">
+<li><a href="https://gohugo.io/getting-started/quick-start/#step-7-build-static-pages">Step 7: Build static pages</a></li>
+</ol>
+<p>Once all of this is done, you are ready to build your static page.</p>
+<p>The last piece I did here was to configure <code>hugo deploy</code> to deploy directly to
+my Google Cloud Storage bucket.  I&rsquo;m pretty sure I just followed the
+<a href="https://gohugo.io/hosting-and-deployment/hugo-deploy/">Hugo Deploy Documentation</a>
+for that piece.</p>
+  </div>
+  <footer>
+  <p>
+  &copy; 2020 Nathan Bibb.
+  Powered by <a href="https://gohugo.io/">Hugo</a>
+  using the <a href="https://github.com/koirand/pulp/">pulp</a> theme.
+  </p>
+  <p>
+  <a href="http://www.nathanbibb.com/about/">About</a>
+  </p>
+</footer>
+
+
+  </body>
+</html>

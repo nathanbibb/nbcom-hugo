@@ -11,6 +11,18 @@
     
     
     <item>
+      <title>Setting Up This Hugo Site</title>
+      <link>http://www.nathanbibb.com/journal/setting-up-this-hugo-site/</link>
+      <pubDate>Sat, 04 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.nathanbibb.com/journal/setting-up-this-hugo-site/</guid>
+      <description>&lt;p&gt;When setting up this Hugo site, I found that most of the documentation was
+either very high-level (&amp;ldquo;Quick Start&amp;rdquo;) or very in-depth (Full Specs).  There
+wasn&amp;rsquo;t much of a middle ground, giving a step-by-step process of both setting
+up a minimal site, and doing some basic configuration,&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>About</title>
       <link>http://www.nathanbibb.com/about/</link>
       <pubDate>Wed, 18 Mar 2020 21:46:33 -0400</pubDate>
