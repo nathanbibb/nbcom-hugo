@@ -34,4 +34,6 @@ the [Pulp](https://github.com/koirand/pulp/) theme.
 
 Local development is done on an
 [Intel NUC](https://www.intel.com/content/www/us/en/products/boards-kits/nuc.html)
-running [Fedora](https://getfedora.org/).
+running [Fedora](https://getfedora.org/) and a
+[System76 Lemur Pro](https://system76.com/laptops/lemur) running
+[Pop!_OS](https://pop.system76.com/).
