@@ -27,13 +27,13 @@ So I'm leaving this site's purpose open ended.
 The colors on this site are adopted from the
 [Solarized](https://ethanschoonover.com/solarized/) color palette.
 
-The main image on this site is a picture of Nathan Bibb with cat Ivy.
+The main image on this site is a picture of me (Nathan Bibb) with our cat Ivy.
 
 This site is built using [Hugo](https://gohugo.io/) with a modified version of
-the [Pulp](https://github.com/koirand/pulp/) theme.
+the [Pulp](https://github.com/koirand/pulp/) theme.  It is hosted as a static
+site using
+[Google Cloud Storage](https://cloud.google.com/storage/docs/hosting-static-website).
 
-Local development is done on an
-[Intel NUC](https://www.intel.com/content/www/us/en/products/boards-kits/nuc.html)
-running [Fedora](https://getfedora.org/) and a
-[System76 Lemur Pro](https://system76.com/laptops/lemur) running
-[Pop!_OS](https://pop.system76.com/).
+Local development is done on a
+[System76 Lemur Pro](https://system76.com/laptops/lemur)
+running [Pop!_OS](https://pop.system76.com/) linux.
