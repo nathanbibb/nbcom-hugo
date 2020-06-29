@@ -1,5 +1,14 @@
 [
     {
+        "ref": "http://www.nathanbibb.com/journal/a-note-on-my-new-computer-setup/",
+        "title": "A Note on My New Computer Setup",
+        "section": "journal",
+        "tags": ["Technology"],
+        "date" : "2020.06.28",
+        "body": "During this whole COVID crisis, I\u0026rsquo;ve been attending a lot more virtual meetings for personal reasons that I ever have in my life. While I was able to attend these meetings with my trust NUC desktop computer, I felt the need once again to have a decent laptop for this and other reasons.\nI purchased my last laptop in 2013, and I honestly didn\u0026rsquo;t think I would ever get a new laptop. But a company called System76 recently came out with a new computer that seemed to be exactly what I wanted, so I blew my stimulus money on a new machine. I do not regret it at all.\nThere are a ton of reviews of the System76 Lemur Pro, so I\u0026rsquo;m not going to review it here or anything. However, I will provide some links to accessories that work well with it. One of the things I didn\u0026rsquo;t want to give up is my multiple monitor setup. Since the Lemur Pro has a USB-C port that supports Display Port, so it should be supported by a USB-C hub, but the whole world of USB-C is a confusing mess right now.\nSo here\u0026rsquo;s what I used that worked:\n Lemur Pro: I ordered mine with minimum RAM and a 250GB NVMe drive for the OS, no second drive. Hiearcool USB-C Hub: I was prepared to return it if it didn\u0026rsquo;t work, but it doesn the job, hooking up 2 monitors (HDMI and/or VGA), USB-3 external drives, Ethernet, and power. USB-C Power Supply: Works fine hooked up to the Hiearcool hub. USB-C Extender: The one complaint I have about the Hiearcool Hub is it has a short cord to the laptop that is attached to the hub. This extender allows me to attach the hub to the underside of my desk and hide away the mess.  So that\u0026rsquo;s what works for me. I should probably post this on reddit so someone actually sees it.\n"
+    }
+,
+    {
         "ref": "http://www.nathanbibb.com/journal/setting-up-this-hugo-site/",
         "title": "Setting Up This Hugo Site",
         "section": "journal",
