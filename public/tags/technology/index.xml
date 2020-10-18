@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Nathan Bibb</title>
-    <link>http://www.nathanbibb.com/</link>
-    <description>Recent content on Nathan Bibb</description>
+    <title>Technology on Nathan Bibb</title>
+    <link>http://www.nathanbibb.com/tags/technology/</link>
+    <description>Recent content in Technology on Nathan Bibb</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 28 Jun 2020 23:25:42 -0400</lastBuildDate><atom:link href="http://www.nathanbibb.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Jun 2020 23:25:42 -0400</lastBuildDate><atom:link href="http://www.nathanbibb.com/tags/technology/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Note on My New Computer Setup</title>
       <link>http://www.nathanbibb.com/journal/a-note-on-my-new-computer-setup/</link>
@@ -28,18 +28,6 @@ to have a decent laptop.&lt;/p&gt;</description>
 either very high-level (&amp;ldquo;Quick Start&amp;rdquo;) or very in-depth (Full Specs).  There
 wasn&amp;rsquo;t much of a middle ground, giving a step-by-step process of both setting
 up a minimal site, and doing some basic configuration,&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>http://www.nathanbibb.com/about/</link>
-      <pubDate>Wed, 18 Mar 2020 21:46:33 -0400</pubDate>
-      
-      <guid>http://www.nathanbibb.com/about/</guid>
-      <description>&lt;p&gt;To correct the front page a little, I work for a giant consulting conglomerate
-that has a smaller division that sells software to insurance companies.  You
-can see more details about my work life on my
-&lt;a href=&#34;https://www.linkedin.com/in/nathanbibb/&#34;&gt;LinkedIn page&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
