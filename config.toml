@@ -63,6 +63,13 @@ ignoreErrors = ["error-output-taxonomy"]
     weight = 30
 
 [[menu.main]]
+    identifier = "bandcamp"
+    # name = "Bandcamp"
+    pre = "<i class='fab fa-bandcamp fa-lg'></i>"
+    url = "https://nathanbibb.bandcamp.com/"
+    weight = 30
+
+[[menu.main]]
     identifier = "email"
     # name = "Email"
     pre = "<i class='fa fa-envelope fa-lg'></i>"
