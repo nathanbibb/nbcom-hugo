@@ -17,7 +17,7 @@
   
   
   
-  <link rel="stylesheet" href="http://www.nathanbibb.com/style.min.5861ad63d0de3e817fa7c8328c67016ea4607e9410a289cb4c4602684c1df608.css" integrity="sha256-WGGtY9DePoF/p8gyjGcBbqRgfpQQoonLTEYCaEwd9gg=">
+  <link rel="stylesheet" href="http://www.nathanbibb.com/style.min.3eb444264034843121fe681f28f2560461851c60a52f210aeb4329a904b034e1.css" integrity="sha256-PrREJkA0hDEh/mgfKPJWBGGFHGClLyEK60MpqQSwNOE=">
   
   
   
@@ -35,22 +35,18 @@ either very high-level (&ldquo;Quick Start&rdquo;) or very in-depth (Full Specs)
 wasn&rsquo;t much of a middle ground, giving a step-by-step process of both setting
 up a minimal site, and doing some basic configuration," />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://www.nathanbibb.com/journal/setting-up-this-hugo-site/" />
+<meta property="og:url" content="http://www.nathanbibb.com/journal/setting-up-this-hugo-site/" /><meta property="article:section" content="journal" />
 <meta property="article:published_time" content="2020-04-04T00:00:00+00:00" />
 <meta property="article:modified_time" content="2020-04-04T00:00:00+00:00" />
+
 <meta itemprop="name" content="Setting Up This Hugo Site">
 <meta itemprop="description" content="When setting up this Hugo site, I found that most of the documentation was
 either very high-level (&ldquo;Quick Start&rdquo;) or very in-depth (Full Specs).  There
 wasn&rsquo;t much of a middle ground, giving a step-by-step process of both setting
-up a minimal site, and doing some basic configuration,">
-<meta itemprop="datePublished" content="2020-04-04T00:00:00+00:00" />
+up a minimal site, and doing some basic configuration,"><meta itemprop="datePublished" content="2020-04-04T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2020-04-04T00:00:00+00:00" />
 <meta itemprop="wordCount" content="1489">
-
-
-
-<meta itemprop="keywords" content="Technology," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="Technology," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:image" content="http://www.nathanbibb.com/img/avatar.jpg"/>
 <meta name="twitter:title" content="Setting Up This Hugo Site"/>
 <meta name="twitter:description" content="When setting up this Hugo site, I found that most of the documentation was
@@ -141,7 +137,7 @@ home directory clutter.</p>
 <p>I followed each part of this step except for the last piece. I used the
 <a href="https://themes.gohugo.io/pulp/">Pulp theme</a>, and as directed by the guide, I
 downloaded the theme from Github and added it to my site&rsquo;s <code>theme</code> directory:</p>
-<pre><code>cd quickstart
+<pre tabindex="0"><code>cd quickstart
 git init
 git submodule add https://github.com/koirand/pulp.git themes/pulp
 </code></pre><p>See the note on the Quick Start for non-git users. I recently moved from
@@ -149,9 +145,9 @@ git submodule add https://github.com/koirand/pulp.git themes/pulp
 so I was good to go here.</p>
 <p>After this, I diverged a bit from the Quick Start Guide.  Instead of adding the
 theme to the site configuration as suggested in the Quick Start:</p>
-<pre><code>echo 'theme = &quot;pulp&quot;' &gt;&gt; config.toml
+<pre tabindex="0"><code>echo 'theme = &quot;pulp&quot;' &gt;&gt; config.toml
 </code></pre><p>&hellip;I copied the config file from the theme&rsquo;s <code>exampleSite</code> directory:</p>
-<pre><code>cp themes/pulp/exampleSite/config.toml .
+<pre tabindex="0"><code>cp themes/pulp/exampleSite/config.toml .
 </code></pre><p>I found there were settings in the Theme&rsquo;s config file that I needed, and there
 was no need to copy them to Hugo&rsquo;s default config file.  The default theme for
 the Quick Start, <a href="https://themes.gohugo.io/gohugo-theme-ananke/">Ananke</a>,
@@ -165,11 +161,11 @@ theme you use.</p>
 really just the directory the content will be in. The category
 expected by the default theme was <code>posts</code>, but Pulp expects a category of
 <code>blog</code>, so my first new content command looked like this:</p>
-<pre><code>hugo new blog/my-first-post.md
+<pre tabindex="0"><code>hugo new blog/my-first-post.md
 </code></pre><p>Now, in a text editor, put something in the new file created at
 <code>quickstart/content/blog/my-first-post.md</code>.  Put your content at the bottom
 of the file, so it looks something like this:</p>
-<pre><code>---
+<pre tabindex="0"><code>---
 title: &quot;My First Post&quot;
 date: 2020-04-04T18:32:47-04:00
 draft: true
@@ -179,7 +175,7 @@ This is my own freshly created content!
 <li><a href="https://gohugo.io/getting-started/quick-start/#step-5-start-the-hugo-server">Step 5: Start the Hugo server</a></li>
 </ol>
 <p>Now, you can start your Hugo server and see your cool new site:</p>
-<pre><code>hugo server -D
+<pre tabindex="0"><code>hugo server -D
 </code></pre><p>The -D is for &ldquo;Drafts&rdquo;.</p>
 <p>If you point your browser to <a href="http://localhost:1313/">http://localhost:1313/</a>,
 you should see something similar to this:
@@ -198,10 +194,10 @@ to get to having your own site configured.</p>
 <h3 id="basic-customization">Basic Customization</h3>
 <p>You will first need to change the following lines in your <code>config.toml</code> file
 to reflect your specific site:</p>
-<pre><code>baseurl = &quot;https://example.com/&quot;
+<pre tabindex="0"><code>baseurl = &quot;https://example.com/&quot;
 title = &quot;Site Title&quot;
 </code></pre><p>Also, in the <code>params</code> section, you should change these values:</p>
-<div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
 <span class="hl">    <span class="nx">author</span> <span class="p">=</span> <span class="s2">&#34;Your Name&#34;</span>
 </span>    <span class="nx">avatar</span> <span class="p">=</span> <span class="s2">&#34;avatar.jpg&#34;</span>
     <span class="nx">favicon</span> <span class="p">=</span> <span class="s2">&#34;favicon.ico&#34;</span>
@@ -225,7 +221,7 @@ in the directory <code>static\img</code>.</li>
 you can change each of these menu items to point to the URL to your Twitter,
 Github, and/or Email links, and add others as well.  Just update or copy/paste
 this block in <code>config.toml</code>:</p>
-<div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[[</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[[</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
     <span class="nx">identifier</span> <span class="p">=</span> <span class="s2">&#34;github&#34;</span>
     <span class="c"># name = &#34;GitHub&#34;</span>
     <span class="nx">pre</span> <span class="p">=</span> <span class="s2">&#34;&lt;i class=&#39;fab fa-github fa-lg&#39;&gt;&lt;/i&gt;&#34;</span>
@@ -252,7 +248,7 @@ following:</p>
 provide the colors you want.  I don&rsquo;t think there is an easier way to do this.</p>
 <p>For instance, the <code>custom.css</code> I used for this site (based on the Solarized
 color palette) looks like this:</p>
-<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="c">/* style.css overrides */</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="c">/* style.css overrides */</span>
 
 <span class="nt">body</span> <span class="p">{</span>
   <span class="k">background-color</span><span class="p">:</span> <span class="mh">#073642</span><span class="p">;</span>
@@ -345,7 +341,7 @@ for this theme in <code>themes/pulp/layouts/partials</code>.</p>
 <p>To change this, I copied the file I wanted to change, <code>footer.html</code>, to the same
 directory outside the theme directory - <code>layouts/partials/footer.html</code>.  Then I
 added this line to the file:</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
   <span class="ni">&amp;copy;</span> {{ .Site.Params.publicationYear }} {{ .Site.Params.Author }}.
   Powered by <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://gohugo.io/&#34;</span><span class="p">&gt;</span>Hugo<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
@@ -364,12 +360,12 @@ details on why this worked:</p>
 <ol>
 <li>I created a new <code>content/blog/_index.md</code> file.</li>
 </ol>
-<pre><code>hugo new blog/_index.md
+<pre tabindex="0"><code>hugo new blog/_index.md
 </code></pre><ol start="2">
 <li>In this file, I added the text I wanted to display on the main page of the
 blog.</li>
 </ol>
-<pre><code>---
+<pre tabindex="0"><code>---
 title: &quot;Blog&quot;
 date: 2020-04-04T23:29:35-04:00
 draft: true
@@ -381,7 +377,7 @@ copied <code>themes/pulp/layouts/_default/list.html</code> to
 <code>layouts/_default/list.html</code>, and updated the copied file to add the
 <code>{{.Content}}</code> <a href="https://gohugo.io/content-management/shortcodes/">Shortcode</a></li>
 </ol>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">{{ define &#34;main&#34;}}
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">{{ define &#34;main&#34;}}
   <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>{{ .Title }}<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
   {{ partial &#34;header.html&#34; . }}
   <span class="c">&lt;!-- search box --&gt;</span>

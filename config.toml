@@ -70,6 +70,13 @@ ignoreErrors = ["error-output-taxonomy"]
     weight = 30
 
 [[menu.main]]
+    identifier = "spotify"
+    # name = "Spotify"
+    pre = "<i class='fab fa-spotify fa-lg'></i>"
+    url = "https://open.spotify.com/artist/0IBCnLFIo7UcSLv8IhJlDl?si=GW0fFQvVS8KwwW8nKCxiIw"
+    weight = 30
+
+[[menu.main]]
     identifier = "email"
     # name = "Email"
     pre = "<i class='fa fa-envelope fa-lg'></i>"

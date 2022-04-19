@@ -1,59 +1,37 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>http://www.nathanbibb.com/tags/music/</loc>
     <lastmod>2021-10-07T14:17:30-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.nathanbibb.com/</loc>
     <lastmod>2021-10-07T14:17:30-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.nathanbibb.com/journal/softshoeballet/</loc>
     <lastmod>2021-10-07T14:17:30-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.nathanbibb.com/tags/</loc>
     <lastmod>2021-10-07T14:17:30-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.nathanbibb.com/journal/a-note-on-my-new-computer-setup/</loc>
     <lastmod>2020-06-28T23:25:42-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.nathanbibb.com/tags/technology/</loc>
     <lastmod>2020-06-28T23:25:42-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.nathanbibb.com/journal/setting-up-this-hugo-site/</loc>
     <lastmod>2020-04-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.nathanbibb.com/about/</loc>
     <lastmod>2020-03-18T21:46:33-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.nathanbibb.com/journal/</loc>
     <lastmod>2020-03-18T20:27:23-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.nathanbibb.com/journal/a-new-site-design/</loc>
     <lastmod>2020-03-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://www.nathanbibb.com/categories/</loc>
   </url>
-  
 </urlset>

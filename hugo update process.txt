@@ -1,0 +1,29 @@
+nbcom-hugo update procedure
+===========================
+
+0. Go to Hugo Site directory
+----------------------------
+cd ~/Documents/git/nbcom-hugo
+
+1. Create new post
+------------------
+hugo new journal/name-of-post.md
+
+2. Test post while Draft
+------------------------
+hugo server -D
+
+3. Generate site, checkin, and deploy
+-------------------------------------
+hugo
+git status
+git add [whatever needs adding]
+git commit -m [message about the change]
+git push origin master
+hugo deploy
+
+(if needed, authenticate google cloud:
+
+gcloud auth application-default login
+)
+
